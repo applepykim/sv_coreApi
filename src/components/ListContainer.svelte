@@ -32,7 +32,7 @@
         bind:this={listsEl}
         class="lists">
         {#each $lists as list (list.id)}
-            <List {list} />
+            <List {sortableLists} {list} />
         {/each}
     </div>
     <CreateList />
